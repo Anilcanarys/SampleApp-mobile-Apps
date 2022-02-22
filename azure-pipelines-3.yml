@@ -6,8 +6,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
 # This task trigger a new build to run, this build is the same as the step above that generates the bundle
-- task: TriggerBuild
+- task: TriggerBuild@4
   displayName: 'trigger App Build CI'
   inputs:
     definitionIsInCurrentTeamProject: true
